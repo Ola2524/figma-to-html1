@@ -1,211 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Lora:wght@400;600&family=Mulish:wght@300;400;700;800&family=Poppins:wght@100;200;300;400;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dynalight&family=Lora:wght@400;600&family=Mulish:wght@300;400;700;800&family=Poppins:wght@100;200;300;400;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Trafalgar</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="navbar container">
-            <div class="navbar__logo">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <button onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>
-            <div class="navbar__links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Find a doctor</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
+      <div class="navbar container">
+        <div class="navbar__logo">
+          <img src="./images/logo.png" alt="" />
         </div>
+        <button class="menu-toggle" onclick="showMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar__links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+      </div>
 
-        <div id="menu">
-            <div class="close">
-                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-            </div>
-            <div class="nenu__links">
-                <h5>menu</h5>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Find a doctor</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
+      <div id="menu">
+        <div class="close">
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
         </div>
+        <div class="nenu__links">
+          <h5>menu</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section class="banner container">
-            <div class="banner__contents">
-                <h1>Virtual healthcare for you</h1>
-                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                <a href="#">Consult today</a>
-            </div>
-            <div class="banner__img">
-                <img src="./images/illustration.png" alt="">
-            </div>
+      <div class="banner__contents">
+        <h1>Virtual healthcare for you</h1>
+        <p>
+          Trafalgar provides progressive, and affordable healthcare, accessible
+          on mobile and online for everyone
+        </p>
+        <a href="#">Consult today</a>
+      </div>
+      <div class="banner__img">
+        <img src="./images/illustration.png" alt="" />
+      </div>
     </section>
 
     <section class="services">
-        <div class="container">
-            <div class="services__title">
-                <h2>Our Services</h2>
-                <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
-            </div>
-            
-            <div class="services__background-cloud">
-                <img src="./images/Frame.png" alt="">
-            </div>
-
-            <div class="services__background-dots">
-                <img src="./images/element-1.png" alt="">
-            </div>
-
-            <div class="services__contents">
-                <div class="services__item">
-                    <img src="images/Frame-1.png" alt="">
-                    <h3>Search doctor</h3>
-                    <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
-                </div>
-                <div class="services__item">
-                    <img src="images/Frame-2.png" alt="">
-                    <h3>Online pharmacy</h3>
-                    <p>Buy  your medicines with our mobile application with a simple delivery system</p>
-                </div>
-                <div class="services__item">
-                    <img src="images/Frame-3.png" alt="">
-                    <h3>Consultation</h3>
-                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                </div>
-                <div class="services__item">
-                    <img src="images/Frame-4.png" alt="">
-                    <h3>Details info</h3>
-                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                </div>
-                <div class="services__item">
-                    <img src="images/Frame-5.png" alt="">
-                    <h3>Emergency care</h3>
-                    <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
-                </div>
-                <div class="services__item">
-                    <img src="images/Frame-6.png" alt="">
-                    <h3>Tracking</h3>
-                    <p>Track and save your medical history and health data</p>
-                </div>
-            </div>
-            <div class="services__learn-more">
-                <a href="">Learn more</a>
-            </div>
+      <div class="container">
+        <div class="services__title">
+          <h2>Our Services</h2>
+          <p>
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </p>
         </div>
+
+        <div class="services__background-cloud">
+          <img src="./images/Frame.png" alt="" />
+        </div>
+
+        <div class="services__background-dots">
+          <img src="./images/element-1.png" alt="" />
+        </div>
+
+        <div class="services__contents">
+          <div class="services__item">
+            <img src="images/Frame-1.png" alt="" />
+            <h3>Search doctor</h3>
+            <p>
+              Choose your doctor from thousands of specialist, general, and
+              trusted hospitals
+            </p>
+          </div>
+          <div class="services__item">
+            <img src="images/Frame-2.png" alt="" />
+            <h3>Online pharmacy</h3>
+            <p>
+              Buy your medicines with our mobile application with a simple
+              delivery system
+            </p>
+          </div>
+          <div class="services__item">
+            <img src="images/Frame-3.png" alt="" />
+            <h3>Consultation</h3>
+            <p>
+              Free consultation with our trusted doctors and get the best
+              recomendations
+            </p>
+          </div>
+          <div class="services__item">
+            <img src="images/Frame-4.png" alt="" />
+            <h3>Details info</h3>
+            <p>
+              Free consultation with our trusted doctors and get the best
+              recomendations
+            </p>
+          </div>
+          <div class="services__item">
+            <img src="images/Frame-5.png" alt="" />
+            <h3>Emergency care</h3>
+            <p>
+              You can get 24/7 urgent care for yourself or your children and
+              your lovely family
+            </p>
+          </div>
+          <div class="services__item">
+            <img src="images/Frame-6.png" alt="" />
+            <h3>Tracking</h3>
+            <p>Track and save your medical history and health data</p>
+          </div>
+        </div>
+        <div class="services__learn-more">
+          <a href="">Learn more</a>
+        </div>
+      </div>
     </section>
 
     <section class="latest-articles">
-        <div class="container">
-            <div class="latest-articles__title">
-                <h2>Check out our latest article</h2>
-            </div>
-
-            <div class="latest-articles__background-cloud">
-                <img src="./images/Vector.png" alt="">
-            </div>
-
-            <div class="latest-articles__background-dots">
-                <img src="./images/element-1.png" alt="">
-            </div>
-
-            <div class="latest-articles__contents">
-                <article class="latest-articles__item">
-                    <img src="./images/image 2.png" alt="">
-                    <h3>Disease detection, check up in the laboratory</h3>
-                    <p>In this case, the role of the health laboratory is very important to do a disease detection...</p>
-                    <a href="#">Read more <i class="fa-sharp fa-solid fa-right-long"></i></a>
-                </article>
-                <article class="latest-articles__item">
-                    <img src="./images/image 2 (1).png" alt="">
-                    <h3>Herbal medicines that are safe for consumption</h3>
-                    <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
-                    <a href="#">Read more <i class="fa-sharp fa-solid fa-right-long"></i></a>
-                </article>
-                <article class="latest-articles__item">
-                    <img src="./images/image 3.png" alt="">
-                    <h3>Natural care for healthy facial skin</h3>
-                    <p>A healthy lifestyle should start from now and also for your skin health. There are some...</p>
-                    <a href="#">Read more <i class="fa-sharp fa-solid fa-right-long"></i></a>
-                </article>
-            </div>
-            <div class="latest-articles__view-all">
-                <a href="#">View all</a>
-            </div>
+      <div class="container">
+        <div class="latest-articles__title">
+          <h2>Check out our latest article</h2>
         </div>
+
+        <div class="latest-articles__background-cloud">
+          <img src="./images/Vector.png" alt="" />
+        </div>
+
+        <div class="latest-articles__background-dots">
+          <img src="./images/element-1.png" alt="" />
+        </div>
+
+        <div class="latest-articles__contents">
+          <article class="latest-articles__item">
+            <img src="./images/image 2.png" alt="" />
+            <h3>Disease detection, check up in the laboratory</h3>
+            <p>
+              In this case, the role of the health laboratory is very important
+              to do a disease detection...
+            </p>
+            <a href="#"
+              >Read more <i class="fa-sharp fa-solid fa-right-long"></i
+            ></a>
+          </article>
+          <article class="latest-articles__item">
+            <img src="./images/image 2 (1).png" alt="" />
+            <h3>Herbal medicines that are safe for consumption</h3>
+            <p>
+              Herbal medicine is very widely used at this time because of its
+              very good for your health...
+            </p>
+            <a href="#"
+              >Read more <i class="fa-sharp fa-solid fa-right-long"></i
+            ></a>
+          </article>
+          <article class="latest-articles__item">
+            <img src="./images/image 3.jpg" alt="" />
+            <h3>Natural care for healthy facial skin</h3>
+            <p>
+              A healthy lifestyle should start from now and also for your skin
+              health. There are some...
+            </p>
+            <a href="#"
+              >Read more <i class="fa-sharp fa-solid fa-right-long"></i
+            ></a>
+          </article>
+        </div>
+        <div class="latest-articles__view-all">
+          <a href="#">View all</a>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="footer_copyright">
-                <div class="footer_logo">
-                    <img src="images/T.png" alt="">
-                    <h2>Trafalgar</h2>
-                </div>
-            <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-            <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+      <div class="footer_copyright">
+        <div class="footer_logo">
+          <h2>Trafalgar</h2>
         </div>
+        <p>
+          Trafalgar provides progressive, and affordable healthcare, accessible
+          on mobile and online for everyone
+        </p>
+        <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+      </div>
 
-        <div class="footer_links">
-            <h4>Company</h4>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Find a doctor</a></li>
-                <li><a href="#">Apps</a></li>
-            </ul>
-        </div>  
-        
-        <div class="footer_region">
-            <h4>Region</h4>
-            <ul>
-                <li><a href="#">Indonesia</a></li>
-                <li><a href="#">Singapore</a></li>
-                <li><a href="#">Hongkong</a></li>
-                <li><a href="#">Canada</a></li>
-            </ul>
-        </div> 
-        
-        <div class="footer_help">
-            <h4>Help</h4>
-            <ul>
-                <li><a href="#">Help center</a></li>
-                <li><a href="#">Contact support</a></li>
-                <li><a href="#">Instructions</a></li>
-                <li><a href="#">How it works</a></li>
-            </ul>
-        </div> 
+      <div class="footer_links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Apps</a></li>
+        </ul>
+      </div>
 
-        <div class="footer__background-dots-left">
-            <img src="./images/element-1.png" alt="">
-        </div>
+      <div class="footer_region">
+        <h4>Region</h4>
+        <ul>
+          <li><a href="#">Indonesia</a></li>
+          <li><a href="#">Singapore</a></li>
+          <li><a href="#">Hongkong</a></li>
+          <li><a href="#">Canada</a></li>
+        </ul>
+      </div>
 
-        <div class="footer__background-dots-right">
-            <img src="./images/element-1.png" alt="">
-        </div>
+      <div class="footer_help">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Contact support</a></li>
+          <li><a href="#">Instructions</a></li>
+          <li><a href="#">How it works</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__background-dots-left">
+        <img src="./images/element-1.png" alt="" />
+      </div>
+
+      <div class="footer__background-dots-right">
+        <img src="./images/element-1.png" alt="" />
+      </div>
     </footer>
 
     <script>
-        function showMenu(){
-            var menu = document.getElementById("menu")
-            menu.style.display = "block"
-        }
+      function showMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.right = "0";
+      }
 
-        function closeMenu(){
-            var menu = document.getElementById("menu")
-            menu.style.display = "none"
+      function closeMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.right = "-274px";
+      }
+
+      document.addEventListener("click", function (event) {
+        var menu = document.getElementById("menu");
+        var toggle = document.querySelector(".menu-toggle");
+        var isClickInside = menu.contains(event.target0) || toggle.contains(event.target);
+
+        if (menu.style.right === "0px" && !isClickInside) {
+          closeMenu();
         }
+      });
+
+      document
+        .getElementById("menu")
+        .addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
     </script>
-</body>
+  </body>
 </html>
